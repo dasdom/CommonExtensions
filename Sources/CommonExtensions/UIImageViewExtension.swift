@@ -5,7 +5,7 @@
 import UIKit
 
 extension UIImageView {
-  func update(heightConstraint: NSLayoutConstraint?, fontMetrics: UIFontMetrics = UIFontMetrics(forTextStyle: .body)) {
+  public func update(heightConstraint: NSLayoutConstraint?, fontMetrics: UIFontMetrics = UIFontMetrics(forTextStyle: .body)) {
 
     guard let image = image else { return }
     let height = floor(fontMetrics.scaledValue(for: image.size.height * 2.5))

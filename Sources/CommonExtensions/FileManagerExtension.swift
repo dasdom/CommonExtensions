@@ -5,7 +5,7 @@
 import Foundation
 
 extension FileManager {
-  func documentsURL() -> URL {
+  public func documentsURL() -> URL {
     if let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
       return url
     } else {
